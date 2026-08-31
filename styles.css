@@ -1,10 +1,13 @@
-nav {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    background-color: red;
+    list-style-type: none;
+    text-transform: uppercase;
 }
 
-nav li {
-
-}
