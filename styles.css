@@ -54,6 +54,9 @@
 
 h2 {
     font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: rgb(173, 131, 110);
+    margin-top: 60px;
 }
 
 .grid-container {
