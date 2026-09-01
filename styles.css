@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: crosshair;
 }
 
 .work, 
@@ -24,28 +25,28 @@
 }
 
 .work {
-    background-image: linear-gradient(to right, #00ffe5, #22c18f);
+    background-image: linear-gradient(to right, #00ffe5, #5ddbb3);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
 .services {
-    background-image: linear-gradient(to right, #ffb804, #b36d0b);
+    background-image: linear-gradient(to right, #df9be9, #e762dc);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
 .about {
-    background-image: linear-gradient(to right, #c48dff, #8e32e9);
+    background-image: linear-gradient(to right, #cda7f6, #c088f7);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
 .create {
-    background-image: linear-gradient(to right, #f2525d, #f8095d);
+    background-image: linear-gradient(to right, #95f39e, #35e266);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
