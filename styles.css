@@ -2,12 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans Georgian', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+.a {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
 }
 
 .grid-container {
@@ -22,7 +21,8 @@ nav ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px;
     list-style-type: none;
-    text-transform: uppercase;
+    font-family: 'Snell Roundhand';
+    font-style: oblique;
     background-color: #ffd5d7;
 }
 
