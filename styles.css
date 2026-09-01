@@ -6,9 +6,15 @@
 
 .a {
     font-family: "Dancing Script", cursive;
-    color: rgb(105, 54, 40);
+    color: rgb(234, 68, 151);
     text-decoration: none;
     font-weight: 400;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.a:hover {
+    transform: scale(1.25);
 }
 
 .grid-container {
