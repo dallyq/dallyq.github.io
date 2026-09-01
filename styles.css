@@ -5,7 +5,7 @@
     cursor: crosshair;
 }
 
-.work, 
+.projects, 
 .services,
 .about, 
 .create {
@@ -13,18 +13,18 @@
     text-decoration: none;
     font-weight: 400;
     display: inline-block; 
-    transform: scale(1);
+    transform: scale(1.25);
     transition: transform 0.5s ease-in-out;
 }
 
-.work:hover, 
+.projects:hover, 
 .services:hover,
 .about:hover, 
 .create:hover {
     transform: scale(1.25);
 }
 
-.work {
+.projects {
     background-image: linear-gradient(to right, #00ffe5, #5ddbb3);
     color: transparent;
     -webkit-background-clip: text;
@@ -50,6 +50,10 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
 }
 
 .grid-container {
