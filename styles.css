@@ -5,18 +5,6 @@
     cursor: crosshair;
 }
 
-.svg {
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.svg:hover {
-    transform: scale(1.15); 
-}
-
-.svg:active {
-    transform: scale(0.95); 
-}
-
 .projects, 
 .services,
 .about, 
@@ -26,14 +14,21 @@
     font-weight: 400;
     display: inline-block; 
     transform: scale(1);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .projects:hover, 
 .services:hover,
 .about:hover, 
 .create:hover {
-    transform: scale(1.2);
+    transform: scale(1.15); 
+}
+
+.projects:active, 
+.services:active,
+.about:active, 
+.create:active {
+    transform: scale(0.95); 
 }
 
 .projects {
