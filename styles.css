@@ -2,12 +2,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans Georgian', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
 }
 
 nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
     list-style-type: none;
     text-transform: uppercase;
+    background-color: peachpuff;
 }
+
 
