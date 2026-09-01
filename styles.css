@@ -17,11 +17,13 @@ a {
 
 nav ul {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    justify-self: center;
+    grid-template-rows: 50px;
     list-style-type: none;
     text-transform: uppercase;
-    background-color: peachpuff;
+    background-color: #ffd5d7;
 }
 
 
