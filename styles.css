@@ -4,16 +4,23 @@
     padding: 0;
 }
 
-.a {
+.work, 
+.services,
+.about, 
+.create {
     font-family: "Dancing Script", cursive;
     color: rgb(234, 68, 151);
     text-decoration: none;
     font-weight: 400;
+    display: inline-block; 
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
 }
 
-.a:hover {
+.work:hover, 
+.services:hover,
+.about:hover, 
+.create:hover {
     transform: scale(1.25);
 }
 
