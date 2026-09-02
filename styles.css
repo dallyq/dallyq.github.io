@@ -126,8 +126,19 @@ nav ul {
     margin: 10px;
 }
 
+h3 {
+    font-size: 100%;
+}
+
 .project- {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: solid 0.5px rgb(204, 172, 255);
     border-radius: 5%;
     padding: 10px 10px;
+    text-align: center;
+}
+
+.project-:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
