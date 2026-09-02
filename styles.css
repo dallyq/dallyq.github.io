@@ -62,8 +62,7 @@
 h2 {
     font-family: "Dancing Script", cursive;
     font-size: 42px;
-    color: rgb(173, 131, 110);
-    margin-top: 60px;
+    color: rgb(158, 158, 158);
 }
 
 a {
@@ -91,4 +90,7 @@ nav ul {
     font-style: oblique;
 }
 
+.intro {
+    border: solid 0.5px lightblue;
 
+}
