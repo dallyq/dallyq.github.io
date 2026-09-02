@@ -130,6 +130,11 @@ h3 {
     font-size: 100%;
 }
 
+.p-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .project- {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: solid 0.5px rgb(204, 172, 255);
