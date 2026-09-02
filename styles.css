@@ -66,6 +66,15 @@ h2 {
     margin-top: 60px;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(255, 125, 209);
+}
+
+a:hover {
+    color: rgb(255, 184, 230);
+}
+
 .grid-container {
     display: grid;
     justify-content: center;
