@@ -98,3 +98,24 @@ nav ul {
     padding: 20px;
     border-radius: 20px;
 }
+
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid rgb(255, 121, 219);
+  width: 0;
+  animation: 
+    typing 3.5s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(255, 121, 219); }
+}
