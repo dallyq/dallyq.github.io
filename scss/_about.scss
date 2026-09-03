@@ -7,3 +7,49 @@
     text-align: center;
     grid-area: tw;
 }
+
+.primary p,
+.secondary p {
+    margin: 10px;
+    color: rgb(133, 126, 150);
+}
+
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tw tw"
+    "a img"
+    "b img"
+    "c img"
+    "d d"
+    "e e";
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: img;
+}
+
+.connect {
+    background-color: #00ffe5;
+}
