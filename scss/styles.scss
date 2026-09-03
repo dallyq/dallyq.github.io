@@ -11,7 +11,6 @@
 @import 'footer';
 
 // 4. Reusable UI Components
-@import 'buttons';
 @import 'cards';
 @import 'forms';
 
@@ -19,79 +18,6 @@
 @import 'home';
 @import 'about';
 
-
-// CSS 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    cursor: crosshair;
-}
-
-.projects, 
-.services,
-.about, 
-.create {
-    font-family: "Dancing Script", cursive;
-    text-decoration: none;
-    font-weight: 400;
-    display: inline-block; 
-    transform: scale(1);
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-&:hover, 
-&:hover,
-&:hover, 
-&:hover {
-    transform: scale(1.15); 
-    }
-
-&:active, 
-&:active,
-&:active, 
-&:active {
-    transform: scale(0.95); 
-    }
-}
-
-.about {
-    background-image: linear-gradient(to right, #cda7f6, #c088f7);
-    @include navtext;
-}
-
-.services {
-    background-image: linear-gradient(to right, #df9be9, #e762dc);
-    @include navtext;
-}
-
-.projects {
-    background-image: linear-gradient(to right, #00ffe5, #5ddbb3);
-    @include navtext;
-}
-
-.create {
-    background-image: linear-gradient(to right, #95f39e, #35e266);
-    @include navtext;
-}
-
-h2 {
-    font-family: "Dancing Script", cursive;
-    font-size: 35px;
-    color: rgb(158, 158, 158);
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255, 125, 209);
-}
-
-a:not(.navli):hover {
-    color: rgb(255, 184, 230);
-}
-
-.grid-container {
-    display: grid;
-    justify-content: center;
-}
 
 nav {
     background-color: white;
