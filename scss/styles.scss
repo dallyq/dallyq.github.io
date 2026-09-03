@@ -1,7 +1,23 @@
-// Partials
-@import 'media-queries';
+// 1. Configuration and Helpers 
 @import 'mixins';
 @import 'variables';
+
+// 2. Vendor and Resets
+@import 'typography';
+
+// 3. Layout and Structural Components
+@import 'header';
+@import 'footer';
+
+// 4. Reusable UI Components
+@import 'buttons';
+@import 'cards';
+@import 'forms';
+
+// 5. Page-Specific Styles
+@import 'home';
+@import 'about';
+
 
 // CSS 
 * {
