@@ -41,3 +41,22 @@
     background-image: linear-gradient(to right, #95f39e, #35e266);
     @include navtext;
 }
+
+nav {
+    background-color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    list-style-type: none;
+    font-family: 'Snell Roundhand';
+}
