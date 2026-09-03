@@ -160,11 +160,14 @@ h3 {
 
 .primary {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: 
-    "a b c"
-    "d e";
+    "a img"
+    "b img"
+    "c img"
+    "d d"
+    "e e";
 }
 
 .a {
@@ -185,6 +188,10 @@ h3 {
 
 .e {
     grid-area: e;
+}
+
+.f {
+    grid-area: img;
 }
 
 .primary p,
