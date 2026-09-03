@@ -7,3 +7,15 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+.bottom-right {
+    text-align: right;
+}
+
+.bottom-right svg {
+    margin: 10px;
+}
+
+footer a,
+footer p {
+    color: rgb(94, 201, 247);
+}
