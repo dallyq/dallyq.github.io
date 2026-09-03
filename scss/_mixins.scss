@@ -1,0 +1,8 @@
+// Mixins
+
+@mixin navtext {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
