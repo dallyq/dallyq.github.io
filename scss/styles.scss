@@ -74,7 +74,6 @@ h2 {
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     color: rgb(158, 158, 158);
-    padding-bottom: 10px;
 }
 
 a {
@@ -159,7 +158,26 @@ h3 {
     }
 }
 
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a a b"
+    "a b a";
+    
+}
+
+.primary p,
+.secondary p {
+    margin: 10px;
+    color: rgb(133, 126, 150);
+}
+
+.connect {
+    background-color: #00ffe5;
+}
+
 .parent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
