@@ -10,14 +10,6 @@ $font-stack-primary: "Dancing Script", cursive;
 $font-stack-secondary: "Snell Roundhand";
 $font-stack-tertiary: "Sans-serif";
 
-// Mixins
-@mixin navtext {
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 // CSS 
 * {
     box-sizing: border-box;
