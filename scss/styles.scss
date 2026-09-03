@@ -2,7 +2,8 @@
 @import 'mixins';
 @import 'variables';
 
-// 2. Vendor and Resets
+// 2. Base and Resets
+@import 'base';
 @import 'typography';
 
 // 3. Layout and Structural Components
