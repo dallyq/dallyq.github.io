@@ -145,16 +145,19 @@ h3 {
     border-radius: 5%;
     padding: 10px 10px;
     text-align: center;
+    min-width: 200px;
 &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+> :first-child {
+    opacity: 50%;
     }
 }
 
 .primary {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
     grid-template-areas: 
     "tw tw"
     "a img"
