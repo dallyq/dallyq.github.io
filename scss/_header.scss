@@ -21,3 +21,23 @@
     transform: scale(0.95); 
     }
 }
+
+.about {
+    background-image: linear-gradient(to right, #cda7f6, #c088f7);
+    @include navtext;
+}
+
+.services {
+    background-image: linear-gradient(to right, #df9be9, #e762dc);
+    @include navtext;
+}
+
+.projects {
+    background-image: linear-gradient(to right, #00ffe5, #5ddbb3);
+    @include navtext;
+}
+
+.create {
+    background-image: linear-gradient(to right, #95f39e, #35e266);
+    @include navtext;
+}
