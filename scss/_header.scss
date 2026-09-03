@@ -1,0 +1,23 @@
+.projects, 
+.services,
+.about, 
+.create {
+    font-family: "Dancing Script", cursive;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block; 
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+&:hover, 
+&:hover,
+&:hover, 
+&:hover {
+    transform: scale(1.15); 
+    }
+&:active, 
+&:active,
+&:active, 
+&:active {
+    transform: scale(0.95); 
+    }
+}
