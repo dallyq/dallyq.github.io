@@ -1,4 +1,14 @@
-// Font stacks
-$font-stack-primary: "Dancing Script", cursive;
-$font-stack-secondary: "Snell Roundhand";
-$font-stack-tertiary: "Sans-serif";
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: rgb(158, 158, 158);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 125, 209);
+}
+
+a:not(.navli):hover {
+    color: rgb(255, 184, 230);
+}
