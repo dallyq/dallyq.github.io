@@ -90,6 +90,15 @@ a:not(.navli):hover {
     justify-content: center;
 }
 
+nav {
+    background-color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
 nav ul {
     display: grid;
     justify-items: center;
@@ -110,25 +119,8 @@ nav ul {
 }
 
 .typewriter {
-    overflow: hidden;
     text-align: center;
-    white-space: nowrap;
-    border-right: .15em solid rgb(255, 121, 219);
-    width: 0;
-    animation: 
-    typing 3.5s steps(30, end) forwards,
-    blink-caret .75s step-end infinite;
     grid-area: tw;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: rgb(255, 121, 219); }
 }
 
 .pieces {
