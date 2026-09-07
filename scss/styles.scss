@@ -1,11 +1,11 @@
 // 1. Configuration and Helpers 
+@import 'media-queries';
 @import 'mixins';
 @import 'variables';
 
 // 2. Base and Resets
 @import 'base';
 @import 'typography';
-@import 'media-queries';
 
 // 3. Layout and Structural Components
 @import 'header';
