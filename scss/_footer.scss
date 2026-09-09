@@ -16,8 +16,9 @@ footer {
 
 .bottom-right {
     text-align: right;
-    
+
     @include mobile {
+        padding-top: 10px;
         text-align: left;
     }
 }
