@@ -4,11 +4,11 @@ body {
     }
 
     @include tablet {
-        padding: 20px;
+        padding: 30px;
     }
 
     @include desktop {
-        padding: 20px;
+        padding: 30px;
     }
 }
 
