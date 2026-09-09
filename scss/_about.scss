@@ -1,17 +1,3 @@
-body {
-    @include mobile {
-        padding: 10px;
-    }
-
-    @include tablet {
-        padding: 30px;
-    }
-
-    @include desktop {
-        padding: 30px;
-    }
-}
-
 .p-info,
 .mail {
     text-align: center;
