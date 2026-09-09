@@ -104,6 +104,10 @@ body {
     height: auto;
     grid-area: img;
     max-width: 547px;
+    
+    @include mobile {
+        padding: 10px;
+    }
 }
 
 .connect {
