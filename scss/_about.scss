@@ -1,3 +1,17 @@
+body {
+    @include mobile {
+        padding: 10px;
+    }
+
+    @include tablet {
+        padding: 20px;
+    }
+
+    @include desktop {
+        padding: 20px;
+    }
+}
+
 .p-info,
 .mail {
     text-align: center;
@@ -14,9 +28,18 @@
     color: rgb(133, 126, 150);
 }
 
+.primary,
+.secondary,
+.mail {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 .primary {
     display: grid;
-    grid-template-columns: minmax(300px);
+
+    @include mobile {
+    grid-template-columns: 1fr;
     grid-template-areas: 
         "tw"
         "img"
@@ -25,10 +48,21 @@
         "c"
         "d"
         "e";
+    }
 
      @include tablet {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tw tw"
+        "a img"
+        "b b"
+        "c c"
+        "d d"
+        "e e";
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "tw tw"
         "a img"
@@ -36,18 +70,6 @@
         "c img"
         "d d"
         "e e";
-    }
-
-    @include desktop {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "tw tw"
-        "a img"
-        "b img"
-        "c img"
-        "d img"
-        "e img";
     }
 
 }
@@ -73,6 +95,8 @@
 }
 
 .f {
+    width: 100%;
+    height: auto;
     grid-area: img;
 }
 
