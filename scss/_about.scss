@@ -16,14 +16,40 @@
 
 .primary {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(300px);
     grid-template-areas: 
-    "tw tw"
-    "a img"
-    "b img"
-    "c img"
-    "d d"
-    "e e";
+        "tw"
+        "img"
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+
+     @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tw tw"
+        "a img"
+        "b img"
+        "c img"
+        "d d"
+        "e e";
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tw tw"
+        "a img"
+        "b img"
+        "c img"
+        "d img"
+        "e img";
+    }
+
 }
 
 .a {
