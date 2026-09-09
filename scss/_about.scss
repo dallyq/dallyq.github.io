@@ -37,6 +37,7 @@ body {
 
 .primary {
     display: grid;
+    align-items: start;
 
     @include mobile {
     grid-template-columns: 1fr;
@@ -98,6 +99,7 @@ body {
     width: 100%;
     height: auto;
     grid-area: img;
+    max-width: 547px;
 }
 
 .connect {
