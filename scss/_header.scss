@@ -48,6 +48,7 @@ nav {
 
     @include tablet {
         position: sticky;
+        padding: 15px;
         top: 0;
         z-index: 1000;
     }
