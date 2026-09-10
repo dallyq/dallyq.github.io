@@ -2,7 +2,7 @@ nav {
     background-color: white; //colour is temporary to avoid narrowing 
     // down when adding padding to elements underneath it
     width: 100%;
-    padding: 15px;
+    padding: 30px;
 
     @include tablet {
         position: sticky;
