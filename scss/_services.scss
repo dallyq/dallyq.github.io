@@ -1,6 +1,8 @@
 
 .help,
 .offers {
+    max-width: 1200px;
+    margin-inline: auto;
     margin: 20px;
 }
 
@@ -10,11 +12,11 @@
 
 .offers {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-gap: 15px;
 }
 
 .offers img {
-    width: 60%;
+    width: 100%;
 }
 
 .smm,
@@ -22,13 +24,15 @@
 .cc {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 1fr 2fr;
 
     p {
         grid-area: p;
     }
 
     h3 {
+        align-self: end;
+        padding-bottom: 5px;
         grid-area: h;
     }
 }
