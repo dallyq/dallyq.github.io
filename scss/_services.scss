@@ -4,5 +4,26 @@
 }
 
 .offers img {
-    width: 20%;
+    width: 50%;
+}
+
+.smm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h alch"
+    "p alch";
+}
+
+.smm p {
+    grid-area: p;
+}
+
+.smm h3 {
+    grid-area: h;
+}
+
+.alchemist {
+    grid-area: alch;
 }
