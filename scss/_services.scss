@@ -7,23 +7,48 @@
     width: 50%;
 }
 
-.smm {
+.smm,
+.fewd,
+.cc {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+
+    p {
+        grid-area: p;
+    }
+
+    h3 {
+        grid-area: h;
+    }
+}
+
+.smm {
     grid-template-areas: 
     "h alch"
     "p alch";
 }
 
-.smm p {
-    grid-area: p;
-}
-
-.smm h3 {
-    grid-area: h;
-}
-
 .alchemist {
     grid-area: alch;
+}
+
+.fewd {
+    grid-template-areas: 
+    "h picasso"
+    "p picasso";
+}
+
+.picasso {
+    grid-area: picasso;
+}
+
+.cc {
+    grid-template-areas: 
+    "h canva"
+    "p canva";
+}
+
+.canva {
+    grid-area: canva;
 }
