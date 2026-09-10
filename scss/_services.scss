@@ -14,8 +14,10 @@
     grid-gap: 15px;
 }
 
-.offers img {
-    width: 50%;
+.alchemist,
+.picasso,
+.canva {
+    width: 80%;
 }
 
 .smm,
@@ -47,8 +49,10 @@
 }
 
 @include mobile {
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
+.offers { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
     
     .smm {
     grid-template-areas: 
@@ -73,8 +77,10 @@ grid-template-rows: 1fr;
 }
 
 @include tablet {
-grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 2fr;
+.offers {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
 
     .smm {
         grid-template-areas: 
@@ -96,8 +102,10 @@ grid-template-rows: 1fr 2fr;
 }
 
 @include desktop {
-grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 2fr;
+.offers {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
 
     .smm {
         grid-template-areas: 
