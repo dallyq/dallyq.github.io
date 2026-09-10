@@ -4,6 +4,7 @@
 }
 
 .typewriter {
+    padding-top: 5px;
     text-align: center;
     grid-area: tw;
 }
@@ -19,6 +20,10 @@
     padding: 0 40px;
     max-width: 1200px;
     margin-inline: auto;
+}
+
+.secondary {
+    padding-top: 10px;
 }
 
 .primary {
@@ -136,5 +141,5 @@
 }
 
 .mail {
-    padding-top: 10px;
+    padding-top: 20px;
 }
