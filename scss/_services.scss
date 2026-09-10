@@ -14,19 +14,24 @@
     grid-gap: 15px;
 }
 
+.offers img {
+    width: 50%;
+}
+
 .smm,
 .fewd,
 .cc {
     display: grid;
 
-p {
-    grid-area: p;
-}
+    p {
+        grid-area: p;
+    }
 
-h3 {
-    align-self: end;
-    padding-bottom: 5px;
-    grid-area: h;
+    h3 {
+        align-self: end;
+        padding-bottom: 5px;
+        grid-area: h;
+    }
 }
 
 .alchemist {
@@ -41,9 +46,9 @@ h3 {
     grid-area: canva;
 }
 
-    @include mobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+@include mobile {
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
     
     .smm {
     grid-template-areas: 
@@ -51,22 +56,25 @@ h3 {
         "h"
         "p";
     }
+
     .fewd {
     grid-template-areas: 
         "picasso"
         "h"
         "p";
     }
+
     .cc {
     grid-template-areas: 
         "canva"
         "h"
         "p";
     }
+}
 
-    @include tablet {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 2fr;
+@include tablet {
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 2fr;
 
     .smm {
         grid-template-areas: 
@@ -84,12 +92,28 @@ h3 {
         grid-template-areas: 
         "h canva"
         "p canva";
-        }
-    }
-
     }
 }
 
-.offers img {
-    width: 50%;
+@include desktop {
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 2fr;
+
+    .smm {
+        grid-template-areas: 
+        "h alch"
+        "p alch";
+    }
+
+    .fewd {
+        grid-template-areas: 
+        "h picasso"
+        "p picasso";
+    }
+
+    .cc {
+        grid-template-areas: 
+        "h canva"
+        "p canva";
+    }
 }
