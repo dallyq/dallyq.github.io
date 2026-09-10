@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 15px;
-    margin: 15px;
+    margin: 15px 40px;
 
     @include mobile {
         grid-template-columns: 1fr;
