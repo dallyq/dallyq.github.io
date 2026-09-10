@@ -37,9 +37,9 @@
         "e";
     }
 
-     @include tablet {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+    @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
         "tw tw"
         "a img"
         "b img"
@@ -49,8 +49,8 @@
     }
 
     @include desktop {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
         "tw tw"
         "a img"
         "b img"
