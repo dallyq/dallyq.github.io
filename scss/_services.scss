@@ -1,17 +1,27 @@
+
+.help,
+.offers {
+    margin: 20px;
+}
+
+.help {
+    text-align: center;
+}
+
 .offers {
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .offers img {
-    width: 50%;
+    width: 60%;
 }
 
 .smm,
 .fewd,
 .cc {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 30px 1fr;
 
     p {
