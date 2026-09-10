@@ -1,6 +1,10 @@
 .octa {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .help,
@@ -20,6 +24,10 @@
 }
 
 .offers img {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
     opacity: 70%;
 }
 
@@ -79,10 +87,6 @@
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
-    img {
-        justify-self: center;
-    }
 }
 
     .smm {
@@ -110,10 +114,6 @@
 @include tablet {
 .offers {
     grid-template-columns: 1fr;
-
-    img {
-        justify-self: center;
-    }
 }
 
     .smm {
@@ -139,9 +139,6 @@
 .offers {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    img {
-        justify-self: center;
-    }
 }
 
     .smm {
