@@ -1,10 +1,18 @@
 .octa {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
     @include mobile {
         grid-template-columns: 1fr;
     }
+}
+
+.tandcta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: red;
 }
 
 .help,
