@@ -40,6 +40,7 @@
 .smm,
 .fewd,
 .cc {
+    display: grid;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: solid 0.5px rgb(204, 172, 255);
     border-radius: 5%;
@@ -54,14 +55,12 @@
         opacity: 50%;
         }
     img {
-        width: 70%;
+        max-width: 220px;
+        width: 100%;
     }
-    display: grid;
-
     p {
         grid-area: p;
     }
-
     h3 {
         text-transform: uppercase;
         align-self: end;
@@ -118,20 +117,23 @@
 
     .smm {
         grid-template-areas: 
-        "h alch"
-        "p alch";
+        "alch"
+        "h"
+        "p";
     }
 
     .fewd {
         grid-template-areas: 
-        "h picasso"
-        "p picasso";
+        "picasso"
+        "h"
+        "p";
     }
 
     .cc {
         grid-template-areas: 
-        "h canva"
-        "p canva";
+        "canva"
+        "h"
+        "p";
     }
 }
 
@@ -141,6 +143,11 @@
     grid-template-rows: 1fr;
 }
 
+.smm,
+.fewd,
+.cc {
+    border-radius: 2vw;
+}
     .smm {
         grid-template-areas: 
         "h alch"
