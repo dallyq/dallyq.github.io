@@ -10,13 +10,13 @@
 
 .primary p,
 .secondary p {
-    margin: 10px;
     color: rgb(133, 126, 150);
 }
 
 .primary,
 .secondary,
 .mail {
+    padding: 0 40px;
     max-width: 1200px;
     margin-inline: auto;
 }
@@ -88,8 +88,7 @@
 }
 
 .f {
-    padding: 20px;
-    padding-right: 0;
+    padding: 30px;
     justify-self: center;
     align-self: center;
     width: 100%;
