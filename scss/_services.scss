@@ -27,6 +27,21 @@
 .smm,
 .fewd,
 .cc {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: solid 0.5px rgb(204, 172, 255);
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 200px;
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+    > :first-child {
+        opacity: 50%;
+        }
+    img {
+        width: 70%;
+    }
     display: grid;
 
     p {
