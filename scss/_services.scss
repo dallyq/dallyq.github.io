@@ -1,9 +1,9 @@
 
 .help,
 .offers {
+    margin: 20px;
     max-width: 1200px;
     margin-inline: auto;
-    margin: 40px;
 }
 
 .help {
@@ -23,8 +23,8 @@
 .fewd,
 .cc {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
     p {
         grid-area: p;
@@ -35,34 +35,75 @@
         padding-bottom: 5px;
         grid-area: h;
     }
-}
 
-.smm {
-    grid-template-areas: 
-    "h alch"
-    "p alch";
-}
+    .alchemist {
+        grid-area: alch;
+    }
 
-.alchemist {
-    grid-area: alch;
-}
+    .picasso {
+        grid-area: picasso;
+    }
 
-.fewd {
-    grid-template-areas: 
-    "h picasso"
-    "p picasso";
-}
+    .canva {
+        grid-area: canva;
+    }
+    
+    .smm {
+        grid-template-areas: 
+        "alch"
+        "h"
+        "p";
+    }
+    .fewd {
+        grid-template-areas: 
+        "picasso"
+        "h"
+        "p";
+    }
+    .cc {
+        grid-template-areas: 
+        "canva"
+        "h"
+        "p";
+    }
 
-.picasso {
-    grid-area: picasso;
-}
+    @include tablet {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        .smm {
+            grid-template-areas: 
+            "h alch"
+            "p alch";
+        }
+        .fewd {
+            grid-template-areas: 
+            "h picasso"
+            "p picasso";
+        }
+        .cc {
+            grid-template-areas: 
+            "h canva"
+            "p canva";
+        }
+    }
 
-.cc {
-    grid-template-areas: 
-    "h canva"
-    "p canva";
-}
-
-.canva {
-    grid-area: canva;
+    @include desktop {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        .smm {
+            grid-template-areas: 
+            "h alch"
+            "p alch";
+        }
+        .fewd {
+            grid-template-areas: 
+            "h picasso"
+            "p picasso";
+        }
+        .cc {
+            grid-template-areas: 
+            "h canva"
+            "p canva";
+        }
+    }
 }
