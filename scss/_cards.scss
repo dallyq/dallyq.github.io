@@ -1,8 +1,15 @@
+.p-info {
+    padding: 0 40px;
+}
+
 .pieces {
+    max-width: 1200px;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 15px;
-    margin: 15px 40px;
+    padding-inline: 40px 40px;
+    padding-top: 15px;
 
     @include mobile {
         grid-template-columns: 1fr;
