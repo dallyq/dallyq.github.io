@@ -1,5 +1,8 @@
-.smm {
+.offers {
     display: grid;
+    grid-template-columns: 1fr;
 }
 
-
+.offers img {
+    width: 20%;
+}
