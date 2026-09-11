@@ -1,36 +1,19 @@
-.octa {
-    padding: 15px 40px;
-    max-width: 1200px;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
-    @include mobile {
-        grid-template-columns: 1fr;
-    }
-}
-
-.tandcta {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.cta,
-.testimonials {
-    display: grid;
-}
-
-
 .help {
     text-align: center;
     padding: 0 40px;
 }
 
+.octa {
+    display: grid;
+    padding: 15px 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 .offers {
     display: grid;
     grid-gap: 20px;
+    grid-area: offers;
 }
 
 .offers img {
@@ -53,17 +36,17 @@
     display: grid;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: solid 0.5px rgb(204, 172, 255);
-    border-radius: 5%;
+    border-radius: 2vw;
     padding: 10px 10px;
     text-align: center;
     min-width: 200px;
     &:hover {
         transform: translateY(-8px);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
+    }
     > :first-child {
         opacity: 50%;
-        }
+    }
     img {
         max-width: 220px;
         width: 100%;
@@ -89,6 +72,17 @@
 
 .canva {
     grid-area: canva;
+}
+
+.tandcta {
+    grid-area: tandcta;
+    .notp {
+        grid-area: notp;
+    }
+}
+
+.testimonial {
+    grid-area: test;
 }
 
 @include mobile {
@@ -118,61 +112,11 @@
         "h"
         "p";
     }
-}
 
-@include tablet {
-.offers {
-    grid-template-columns: 1fr;
-}
-
-    .smm {
+    .tandcta {
         grid-template-areas: 
-        "alch"
-        "h"
-        "p";
-    }
-
-    .fewd {
-        grid-template-areas: 
-        "picasso"
-        "h"
-        "p";
-    }
-
-    .cc {
-        grid-template-areas: 
-        "canva"
-        "h"
-        "p";
-    }
-}
-
-@include desktop {
-.offers {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.smm,
-.fewd,
-.cc {
-    border-radius: 2vw;
-}
-    .smm {
-        grid-template-areas: 
-        "h alch"
-        "p alch";
-    }
-
-    .fewd {
-        grid-template-areas: 
-        "h picasso"
-        "p picasso";
-    }
-
-    .cc {
-        grid-template-areas: 
-        "h canva"
-        "p canva";
+        "notp"
+        "test"
+        "test";
     }
 }
