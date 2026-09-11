@@ -55,17 +55,14 @@
     @include tablet {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:  
-        "s1 cta"
-        "s2 t1"
-        "s3 t2";
+        "s1 s2"
+        "s3 s3";
     }
 
     @include desktop {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:  
-        "s1 cta"
-        "s2 t1"
-        "s3 t2";
+        "s1 s2 s3";
     }
 }
 
