@@ -11,6 +11,18 @@
     }
 }
 
+.tandcta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cta,
+.testimonials {
+    display: grid;
+}
+
+
 .help {
     text-align: center;
     padding: 0 40px;
