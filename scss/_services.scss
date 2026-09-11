@@ -43,7 +43,6 @@
 
     @include mobile {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas: 
         "s1"
         "s2"
@@ -58,7 +57,7 @@
         grid-template-areas:  
         "s1 cta"
         "s2 t1"
-        "ta t2";
+        "s3 t2";
     }
 
     @include desktop {
@@ -66,7 +65,7 @@
         grid-template-areas:  
         "s1 cta"
         "s2 t1"
-        "ta t2";
+        "s3 t2";
     }
 }
 
