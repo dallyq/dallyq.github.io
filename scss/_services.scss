@@ -3,25 +3,71 @@
     padding: 0 40px;
 }
 
-.octa {
+.section1 {
+    grid-template-areas: s1;
+}
+
+.section2 {
+    grid-template-areas: s2;
+}
+
+.section3 {
+    grid-template-areas: s3;
+}
+
+.cta {
+    grid-template-areas: cta;
+}
+
+.testimonial1 {
+    grid-template-areas: t1;
+}
+
+.testimonial2 {
+    grid-template-areas: s2;
+}
+
+.grid-container2 {
     display: grid;
+    grid-gap: 20px;
     padding: 15px 40px;
     max-width: 1200px;
     margin-inline: auto;
-}
+    img {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        opacity: 70%;
+    }
 
-.offers {
-    display: grid;
-    grid-gap: 20px;
-    grid-area: offers;
-}
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2"
+        "s3"
+        "cta"
+        "t1"
+        "t2";
+    }
 
-.offers img {
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    opacity: 70%;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  
+        "s1 cta"
+        "s2 t1"
+        "ta t2";
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  
+        "s1 cta"
+        "s2 t1"
+        "ta t2";
+    }
 }
 
 .alchemist,
@@ -30,10 +76,9 @@
     width: 80%;
 }
 
-.smm,
-.fewd,
-.cc {
-    display: grid;
+.section1,
+.section2,
+.section3 {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: solid 0.5px rgb(204, 172, 255);
     border-radius: 2vw;
@@ -51,72 +96,10 @@
         max-width: 220px;
         width: 100%;
     }
-    p {
-        grid-area: p;
-    }
     h3 {
         text-transform: uppercase;
         align-self: end;
         padding-bottom: 5px;
-        grid-area: h;
     }
 }
 
-.alchemist {
-    grid-area: alch;
-}
-
-.picasso {
-    grid-area: picasso;
-}
-
-.canva {
-    grid-area: canva;
-}
-
-.tandcta {
-    grid-area: tandcta;
-    .notp {
-        grid-area: notp;
-    }
-}
-
-.testimonial {
-    grid-area: test;
-}
-
-@include mobile {
-.offers { 
-    text-align: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-    .smm {
-    grid-template-areas: 
-        "alch"
-        "h"
-        "p";
-    }
-
-    .fewd {
-    grid-template-areas: 
-        "picasso"
-        "h"
-        "p";
-    }
-
-    .cc {
-    grid-template-areas: 
-        "canva"
-        "h"
-        "p";
-    }
-
-    .tandcta {
-        grid-template-areas: 
-        "notp"
-        "test"
-        "test";
-    }
-}
