@@ -31,4 +31,24 @@
         width: 10%;
         opacity: 70%;
     }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cherries"
+        "bow"
+        "rose";
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "cherries bow rose";
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "cherries bow rose";
+    }
 }
