@@ -12,6 +12,18 @@
     border-radius: 20px;
 }
 
+.cherries {
+    grid-area: cherries;
+}
+
+.bow {
+    grid-area: bow;
+}
+
+.rose {
+    grid-area: rose;
+}
+
 .bio {
     display: grid;
     padding: 40px;
