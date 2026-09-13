@@ -11,3 +11,12 @@
     border: solid 0.5px rgb(31, 192, 34);
     border-radius: 20px;
 }
+
+.bio {
+    display: grid;
+    padding: 40px;
+    img {
+        width: 10%;
+        opacity: 70%;
+    }
+}
