@@ -39,6 +39,12 @@
         "c"
         "d"
         "e";
+    .b,
+    .c,
+    .d,
+    .e {
+        display: none; // create a show more button for displaying rest of text
+    }
     }
 
     @include tablet {
