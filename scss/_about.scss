@@ -39,26 +39,14 @@
     }
 
     @include tablet {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "tw"
+    grid-template-columns: 1fr;
+    grid-template-areas: 
         "a"
         "b"
         "img"
         "c"
         "d"
         "e";
-    }
-
-    @include tablet {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "img img"
-        "a a"
-        "b b"
-        "c c"
-        "d d"
-        "e e";
     }
 
     @include desktop {
@@ -73,7 +61,6 @@
 }
 
 .a {
-    padding-top: 10px;
     grid-area: a;
 }
 
