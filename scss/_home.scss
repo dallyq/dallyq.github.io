@@ -14,7 +14,6 @@
     margin: 0 40px;
 
     img {
-        justify-self: center;
         align-self: center;
         width: 40%;
     }
@@ -33,6 +32,11 @@ body {
     @include mobile {
         min-width: 290px;
     }
+}
+
+.intro1,
+.intro2 {
+    padding: 40px 0;
 }
 
 .intro {
