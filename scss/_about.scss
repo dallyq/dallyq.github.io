@@ -36,12 +36,18 @@
         "c"
         "d"
         "e";
-    .b,
-    .c,
-    .d,
-    .e {
-        display: none; // create a show more button for displaying rest of text
     }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "tw"
+        "a"
+        "b"
+        "img"
+        "c"
+        "d"
+        "e";
     }
 
     @include tablet {
