@@ -1,5 +1,5 @@
 // This puts the modal into the page
-document.body.insertAdjacentHTML('beforeend', `
+/* document.body.insertAdjacentHTML('beforeend', `
     <div id="modalOverlay" class="modal-overlay hidden">
       <div class="modal">
         <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
@@ -18,4 +18,4 @@ document.body.insertAdjacentHTML('beforeend', `
         </form>
       </div>
     </div>
-  `);
+  `); */
