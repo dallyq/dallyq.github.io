@@ -114,7 +114,24 @@
 
 .grid-container3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0 40px
+    padding: 0 40px;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "t1"
+        "t2";
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "t1 t2";
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "t1 t2";
+    }
 }
