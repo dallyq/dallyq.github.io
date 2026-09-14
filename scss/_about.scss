@@ -7,11 +7,6 @@
     text-align: center;
 }
 
-.typewriter {
-    text-align: center;
-    grid-area: tw;
-}
-
 .primary p,
 .secondary p {
     color: rgb(133, 126, 150);
@@ -28,6 +23,8 @@
 .primary {
     display: grid;
     align-items: start;
+    align-items: stretch;
+    justify-items: stretch;
 
     @include mobile {
     grid-template-columns: 1fr;
@@ -50,9 +47,9 @@
     @include tablet {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "tw tw"
-        "a img"
-        "b img"
+        "img img"
+        "a a"
+        "b b"
         "c c"
         "d d"
         "e e";
@@ -61,11 +58,10 @@
     @include desktop {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "tw tw"
         "a img"
         "b img"
         "c img"
-        "d d"
+        "d img"
         "e e";
     }
 }
@@ -98,7 +94,7 @@
 }
 
 .f {
-    padding: 30px;
+    padding: 10px;
     justify-self: center;
     align-self: center;
     width: 100%;
