@@ -1,31 +1,6 @@
-.parent,
 .bio {
     max-width: 1200px;
     margin-inline: auto;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "intro1 intro1 intro1 pc"
-    "mushroom intro2 intro2 intro2";
-    grid-gap: 20px;
-    margin: 0 40px;
-
-    img {
-        align-self: center;
-        width: 40%;
-    }
-
-    @include mobile {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "intro1"
-        "pc"
-        "intro2"
-        "mushroom";
-    }
 }
 
 body {
@@ -56,22 +31,6 @@ body {
 
 .rose {
     grid-area: rose;
-}
-
-.intro1 {
-    grid-area: intro1;
-}
-
-.intro2 {
-    grid-area: intro2;
-}
-
-.pc {
-    grid-area: pc;
-}
-
-.mushroom {
-    grid-area: mushroom;
 }
 
 .bio-text {
