@@ -28,12 +28,19 @@
     grid-area: t2;
 }
 
+.grid-container2,
+.testimonials,
+.cta,
+.testimonial1,
+.testimonial2 {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 .grid-container2 {
     display: grid;
     grid-gap: 20px;
     padding: 15px 40px;
-    max-width: 1200px;
-    margin-inline: auto;
     img {
         align-items: center;
         justify-content: center;
