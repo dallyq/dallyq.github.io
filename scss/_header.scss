@@ -32,10 +32,6 @@ nav ul {
     @include mobile {
         grid-template-columns: 1fr;
     }
-
-    @include desktop {
-        font-size: 25px;
-    }
 }
 
 .projects, 
