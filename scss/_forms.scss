@@ -1,11 +1,38 @@
+.grid-container4 {
+    display: grid;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "form"
+        "response";
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "form response"
+        "form response";
+    }
+}
+
 #myForm {
     max-width: 1200px;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
     padding: 0 40px;
+    grid-area: form;
     h2,
     p {
         text-align: center;
     }
+}
+
+.response {
+    grid-area: response;
+}
+
+.response img {
+    width: 30%;
 }
