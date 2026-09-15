@@ -68,3 +68,9 @@
         width: 50%;
     }
 }
+
+textarea::placeholder {
+    font-family: "Dancing Script", cursive;
+    color: rgb(186, 186, 186);
+    font-size: 150%;
+}
