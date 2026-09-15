@@ -37,6 +37,14 @@
     p {
         text-align: center;
     }
+    input,
+    label,
+    textarea {
+        margin-bottom: 8px;
+    }
+    button {
+        @include btn;
+    }
 }
 
 #message {
