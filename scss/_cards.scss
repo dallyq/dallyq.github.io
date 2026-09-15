@@ -39,6 +39,7 @@
     }
     button {
         @include btn;
+        padding: 6px;
         width: 140px;
     }
     h3 {
