@@ -4,7 +4,7 @@ function toggleText() {
 
   if (extraText.style.display === "none") {
     extraText.style.display = "inline";
-    buttonText.innerHTML = "Show Less";
+    buttonText.style.display = "none";
   } else {
     extraText.style.display = "none";
     buttonText.innerHTML = "Show More";
