@@ -1,4 +1,5 @@
 .grid-container4 {
+    padding-top: 60px;
     display: grid;
     align-items: center;
 
@@ -43,9 +44,14 @@
 
 .response {
     grid-area: response;
+    display: flex;
+    justify-content: center;
 }
 
 .response img {
     width: 80%;
     opacity: 70%;
+    @include mobile {
+        width: 50%;
+    }
 }
