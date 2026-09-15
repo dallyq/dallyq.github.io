@@ -48,6 +48,15 @@
     button {
         @include btn;
     }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border: 1px solid rgb(125, 230, 202);
+        border-radius: 0.5vw;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 #message {
@@ -67,6 +76,11 @@
         padding-top: 30px;
         width: 50%;
     }
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 textarea::placeholder {
