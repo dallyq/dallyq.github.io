@@ -28,8 +28,22 @@
     </header>
 
     <form id="myForm">
-        <input type="email" id="emailField" placeholder="Enter your email address" required>
-        <button type="submit">Submit</button>
+
+        <!-- Header for form -->
+        <h1>Contact</h1>
+
+        <!-- Name of user -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+
+        <!-- Email of user -->
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="user_email">
+
+        <!-- Input message -->
+        <label for="message">Message</label>
+        <input type="textarea" id="message" name="user_message">
+
     </form>
 
     <script src="js/script.js"></script>
