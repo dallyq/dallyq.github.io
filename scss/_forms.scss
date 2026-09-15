@@ -1,3 +1,11 @@
 #myForm {
-    background-color: red;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    h2,
+    p {
+        text-align: center;
+    }
 }
