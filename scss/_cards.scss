@@ -37,5 +37,16 @@
     img {
         width: 70%;
     }
+    button {
+        background-color: rgb(239, 228, 255);
+        border-radius: 1vw;
+        padding: 6px;
+        border: 1px solid rgb(255, 255, 255);
+        width: 140px;
+        margin-top: 5px;
+    }
+    button:hover {
+        color: rgb(255, 255, 255);
+    }
 }
 
