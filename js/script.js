@@ -1,12 +1,11 @@
-function toggleText() {
-  var extraText = document.getElementById("moreText");
-  var buttonText = document.getElementById("showMore");
+function toggleText(button) {
+  var extraText = button.closest('project-card').querySelector('.moreText');
 
-  if (extraText.style.display === "none") {
+  if ( extraText.style.display === "none" || extraText.style.display === "" ) {
     extraText.style.display = "inline";
-    buttonText.style.display = "none";
+    button.style.display = "none";
   } else {
     extraText.style.display = "none";
-    buttonText.innerHTML = "Show More";
+    button.innerHTML = "Show More";
   }
 }
