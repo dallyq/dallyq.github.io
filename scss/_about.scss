@@ -39,6 +39,9 @@
     }
 
     @include tablet {
+        img {
+            padding: 40px 0;
+        }
     grid-template-columns: 1fr;
     grid-template-areas: 
         "a"
@@ -55,7 +58,7 @@
         "a img"
         "b img"
         "c img"
-        "d img"
+        "d d"
         "e e";
     }
 }
