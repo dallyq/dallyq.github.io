@@ -47,10 +47,12 @@
     }
     button {
         @include btn;
+        padding: 8px;
     }
     input[type="text"],
     input[type="email"],
     textarea {
+        padding: 8px;
         border: 1px solid rgb(125, 230, 202);
         border-radius: 0.5vw;
         &:focus {
