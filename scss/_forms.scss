@@ -1,5 +1,6 @@
 .grid-container4 {
     display: grid;
+    align-items: center;
 
     @include mobile {
         grid-template-columns: 1fr;
@@ -9,6 +10,13 @@
     }
 
     @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "form response"
+        "form response";
+    }
+
+    @include desktop {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "form response"
@@ -34,5 +42,5 @@
 }
 
 .response img {
-    width: 30%;
+    width: 50%;
 }
