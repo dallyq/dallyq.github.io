@@ -10,17 +10,17 @@
     }
 
     @include tablet {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-        "form response"
-        "form response";
+        "form form response"
+        "form form response";
     }
 
     @include desktop {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-        "form response"
-        "form response";
+        "form form response"
+        "form form response";
     }
 }
 
@@ -42,5 +42,5 @@
 }
 
 .response img {
-    width: 50%;
+    width: 80%;
 }
