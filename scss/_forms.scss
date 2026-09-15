@@ -1,4 +1,6 @@
 .grid-container4 {
+    max-width: 1200px;
+    margin-inline: auto;
     padding-top: 60px;
     display: grid;
     align-items: center;
@@ -26,8 +28,6 @@
 }
 
 #myForm {
-    max-width: 1200px;
-    margin-inline: auto;
     display: flex;
     flex-direction: column;
     padding: 0 40px;
