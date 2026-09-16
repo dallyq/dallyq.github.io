@@ -116,7 +116,7 @@ body {
         "fcontainer fcontainer";
     }
     @include desktop {
-        h2 {
+        h1 {
             align-items: flex-end;
         }
         grid-template-columns: repeat(2, 1fr);
@@ -145,7 +145,7 @@ body {
     grid-area: fcontainer;
 }
 
-.featured h2 {
+.featured h1 {
     grid-area: featured;
 }
 
@@ -168,7 +168,7 @@ body {
     display: grid;
     border: 1px rgb(232, 186, 121) solid;
     border-radius: 2vw;
-    h2 {
+    h1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -183,7 +183,7 @@ body {
         "featuredimg"
         "featuredp";
 
-        h2 {
+        h1 {
             justify-content: center;
             align-items: center;
         }
