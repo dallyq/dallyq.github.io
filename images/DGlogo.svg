@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 1080 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d, 2026-05-05)"
+   sodipodi:docname="DG LOGO.svg"
+   inkscape:export-filename="DGLogo"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.30277839"
+     inkscape:cx="653.94363"
+     inkscape:cy="516.87968"
+     inkscape:window-width="1102"
+     inkscape:window-height="676"
+     inkscape:window-x="178"
+     inkscape:window-y="29"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="1080"
+       height="1080"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient12"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e7009f;stop-opacity:1;"
+         offset="0"
+         id="stop13" />
+      <stop
+         style="stop-color:#fca600;stop-opacity:0;"
+         offset="1"
+         id="stop14" />
+    </linearGradient>
+    <rect
+       x="65.923546"
+       y="127.96924"
+       width="926.8075"
+       height="767.81543"
+       id="rect3-3" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12"
+       id="linearGradient14"
+       x1="75.991173"
+       y1="150.41882"
+       x2="85.216469"
+       y2="123.62663"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text2-6"
+       style="font-stretch:ultra-condensed;font-size:16px;font-family:'.SF Georgian';-inkscape-font-specification:'.SF Georgian, Ultra-Condensed';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3-3);display:inline;fill:url(#linearGradient14);stroke:#000000;stroke-width:0.0182615;stroke-miterlimit:3.8;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(36.510333,0,0,52.564436,-2398.1901,-6662.6817)"><tspan
+         x="65.923828"
+         y="142.73471"
+         id="tspan4"><tspan
+           style="font-weight:bold;font-stretch:normal;font-family:Didot;-inkscape-font-specification:'Didot Bold'"
+           id="tspan3">DG.</tspan></tspan></text>
+  </g>
+</svg>
