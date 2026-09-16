@@ -86,3 +86,11 @@ body {
         "bio bio bio";
     }
 }
+
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+        width: 60%;
+    }
+}
