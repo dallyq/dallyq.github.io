@@ -11,3 +11,7 @@
     border: 1px solid rgb(255, 255, 255);
     margin-top: 5px;  
 }
+
+@mixin p10 {
+    padding: 10px 0;
+}
