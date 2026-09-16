@@ -9,3 +9,5 @@ function toggleText(button) {
     button.innerHTML = "Show More";
   }
 }
+
+const type = document.querySelector('.bio-text');
