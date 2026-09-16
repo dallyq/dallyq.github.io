@@ -104,13 +104,14 @@ body {
 }
 
 .homepage {
+    padding: 40px;
+    > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "mystory" "whatido"
-    "mystory" "whatidid"
-    "contactme" "contactme";
+    "mystory" "mystory";
+    }
     img {
-        width: 60%;
+    width: 60%;
     }
 }
