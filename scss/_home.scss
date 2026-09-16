@@ -7,7 +7,7 @@
 
 body {
     @include mobile {
-        min-width: 290px;
+        min-width: 330px;
     }
 }
 
@@ -110,6 +110,9 @@ body {
         "fcontainer fcontainer";
     }
     @include desktop {
+        h2 {
+            align-items: flex-end;
+        }
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "mystory whatido"
@@ -144,29 +147,21 @@ body {
     grid-area: featuredimg;
     justify-self: center;
     align-self: center;
+    padding: 15px;
+    width: 90%;
+    opacity: 70%;
 }
 
 .featured p {
     grid-area: featuredp;
+    margin: 15px; 
 }
 
 .featured {
     display: grid;
     border: 1px rgb(232, 186, 121) solid;
     border-radius: 2vw;
-    img {
-        padding: 15px;
-        width: 90%;
-        opacity: 70%;
-    }
-    p {
-        margin: 15px; 
-    }
-    h2 {
-        margin-top: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+    grid-template-rows: 1fr 3fr;
 
     @include mobile {
         text-align: center;
@@ -182,6 +177,11 @@ body {
         grid-template-areas: 
         "featured featuredimg"
         "featuredp featuredimg";
+        h2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     @include desktop {
@@ -189,5 +189,9 @@ body {
         grid-template-areas: 
         "featured featuredimg"
         "featuredp featuredimg";
+        h2 {
+            display: flex;
+            justify-content: flex-start;
+        }
     }
 }
