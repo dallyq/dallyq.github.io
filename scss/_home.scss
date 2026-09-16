@@ -104,14 +104,39 @@ body {
 }
 
 .homepage {
+    display: grid;
     padding: 40px;
     > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "mystory" "mystory";
+        display: flex;
+    }
+    @include mobile {
+        align-content: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mystory"
+        "whatido"
+        "whatidid"
+        "contactme";
+        > div {
+            flex-direction: column;
+        }
+    }
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "mystory" "whatido"
+        "mystory" "whatido"
+        "contactme" "contactme";
+    }
+    @include desktop {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "mystory" "whatido"
+        "mystory" "whatidid"
+        "contactme" "contactme";
     }
     img {
     width: 60%;
     }
 }
+
