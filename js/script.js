@@ -13,3 +13,14 @@ function toggleText(button) {
 const type = document.querySelector('.bio-text');
 const text = type.textContent;
 type.textContent = '';
+
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    type.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 40); 
+  }
+}
+
+typeWriter();
