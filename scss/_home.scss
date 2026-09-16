@@ -111,6 +111,7 @@ body {
     padding-bottom: 40px;
     > div {
         display: flex;
+        flex-direction: column;
     }
     @include mobile {
         .my-story,
@@ -129,6 +130,14 @@ body {
         "contactme";
     }
     @include tablet {
+        .my-story,
+        .what-i-did,
+        .what-i-do,
+        .contact-me {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "mystory whatido"
@@ -142,7 +151,7 @@ body {
         "contactme contactme";
     }
     img {
-    width: 60%;
+        width: 60%;
     }
 }
 
