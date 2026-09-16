@@ -64,22 +64,27 @@
 }
 
 .a {
+    @include p10;
     grid-area: a;
 }
 
 .b {
+    @include p10;
     grid-area: b;
 }
 
 .c {
+    @include p10;
     grid-area: c;
 }
 
 .d {
+    @include p10;
     grid-area: d;
 }
 
 .e {
+    @include p10;
     grid-area: e;
 }
 
