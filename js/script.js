@@ -1,3 +1,4 @@
+// Function for the cards on the projects page
 function toggleText(button) {
   var extraText = button.closest('.project-card').querySelector('.moreText');
 
@@ -10,6 +11,7 @@ function toggleText(button) {
   }
 }
 
+// Function for the typewriting effect for homepage text
 const type = document.querySelector('.bio-text');
 const text = type.textContent;
 type.textContent = '';
