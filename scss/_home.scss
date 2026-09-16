@@ -87,9 +87,29 @@ body {
     }
 }
 
+.my-story {
+    grid-area: mystory;
+}
+
+.what-i-do {
+    grid-area: whatido;
+}
+
+.what-i-did {
+    grid-area: whatidid;
+}
+
+.contact-me {
+    grid-area: contactme;
+}
+
 .homepage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "mystory" "whatido"
+    "mystory" "whatidid"
+    "contactme" "contactme";
     img {
         width: 60%;
     }
