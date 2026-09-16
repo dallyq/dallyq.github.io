@@ -11,18 +11,6 @@ body {
     }
 }
 
-.intro1,
-.intro2 {
-    padding: 40px 0;
-}
-
-.intro {
-    padding: 15px;
-    justify-items: center;
-    border: solid 0.5px rgb(31, 192, 34);
-    border-radius: 20px;
-}
-
 .cherries {
     grid-area: cherries;
 }
@@ -36,7 +24,6 @@ body {
 }
 
 .bio-text {
-    padding: 0 40px;
     grid-area: bio;
 }
 
@@ -44,7 +31,7 @@ body {
     display: grid;
     padding: 40px;
     text-align: center;
-    color: rgb(250, 134, 134);
+    color: rgb(225, 134, 250);
     img {
         justify-self: center;
         width: 30%;
@@ -89,32 +76,11 @@ body {
     }
 }
 
-.my-story {
-    grid-area: mystory;
-}
-
-.what-i-do {
-    grid-area: whatido;
-}
-
-.what-i-did {
-    grid-area: whatidid;
-}
-
-.contact-me {
-    grid-area: contactme;
-}
-
 .homepage {
+    padding: 0 40px;
     display: grid;
     grid-gap: 15px;
-    padding-right: 40px;
-    padding-left: 40px;
     padding-bottom: 40px;
-    > div {
-        display: flex;
-        flex-direction: column;
-    }
     .my-story,
     .what-i-did,
     .what-i-do,
@@ -124,24 +90,31 @@ body {
         text-align: center;
     }
     @include mobile {
+        padding-right: 40px;
+        padding-left: 40px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "mystory"
         "whatido"
         "whatidid"
-        "contactme";
+        "contactme"
+        "fcontainer";
     }
     @include tablet {
+        padding-right: 40px;
+        padding-left: 40px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "mystory whatido"
-        "whatidid contactme";
+        "whatidid contactme"
+        "fcontainer fcontainer";
     }
     @include desktop {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "mystory whatido"
-        "whatidid contactme";
+        "whatidid contactme"
+        "fcontainer" "fcontainer";
     }
     img {
         width: 60%;
@@ -159,6 +132,10 @@ body {
     }
 }
 
+.featured {
+    grid-area: fcontainer;
+}
+
 .featured h2 {
     grid-area: featured;
 }
@@ -174,8 +151,6 @@ body {
 }
 
 .featured {
-    margin: 40px;
-    margin-top: 0;
     display: grid;
     border: 1px rgb(232, 186, 121) solid;
     border-radius: 2vw;
