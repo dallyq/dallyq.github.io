@@ -1,5 +1,6 @@
 .bio,
-.homepage {
+.homepage,
+.featured {
     max-width: 1200px;
     margin-inline: auto;
 }
@@ -202,6 +203,14 @@ body {
     }
 
     @include tablet {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        "featured featuredimg"
+        "featuredp featuredimg";
+    }
+
+    @include desktop {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 3fr;
         grid-template-areas: 
