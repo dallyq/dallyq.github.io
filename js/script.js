@@ -11,3 +11,5 @@ function toggleText(button) {
 }
 
 const type = document.querySelector('.bio-text');
+const text = type.textContent;
+type.textContent = '';
