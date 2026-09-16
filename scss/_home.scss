@@ -81,6 +81,10 @@ body {
     display: grid;
     grid-gap: 15px;
     padding-bottom: 40px;
+    a {
+        display: inline-block;
+        padding-top: 10px;
+    }
     .my-story,
     .what-i-did,
     .what-i-do,
